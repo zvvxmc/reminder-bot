@@ -8,7 +8,8 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Cont
 # ==========================================
 # НАСТРОЙКИ — ИЗМЕНИ ЭТО!
 # ==========================================
-BOT_TOKEN = "8591989979:AAE13qRDJExAs5tNpb-P1javuV7MSj3H1ag"
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 TASK_TEXT = "⏰ Напоминание! Твоё задание на сегодня:\n\n📌 Тебе нужно надеть наколенники!!"
 TIMEZONE = "Asia/Tashkent"  # Узбекистан (UTC+5)
 # ==========================================
